@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://static.parastorage.com/services/wix-thunderbolt/dist/vendors~vendor-react-dom.b4ecfcb7.chunk.min.js"
+      async=""
+    ></script>
+    <script
+      src="https://static.parastorage.com/services/wix-thunderbolt/dist/vendor-react-dom.f1c80767.chunk.min.js"
+      async=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/ali.css"
+    />
+    <link
+      rel="stylesheet"
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+
+    <style>
+      #cen {
+        text-align: center;
+        padding: 30px;
+        margin: 0px;
+        color: white;
+        text-decoration-line: none;
+      }
+      #yo {
+        text-align: center;
+        padding: 40px;
+      }
+      #rin {
+        margin-left: 223px;
+        margin-right: 40px;
+        margin-top: 60px;
+        padding-right: 20px;
+        margin-bottom: 60px;
+      }
+      #fi {
+        padding: 10px;
+        background-color: black;
+        border-radius: 3px;
+        color: white;
+        width: 200px;
+        height: 30px;
+      }
+      #imge {
+        width: 70%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .icons {
+        border: 2px solid black;
+        position: fixed;
+        top: 60%;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        font-size: 25px;
+        margin: 2px;
+        text-align: left;
+        border-color: white;
+        border-radius: 4px;
+      }
+      #collapse:hover {
+        color: gray;
+      }
+    </style>
+    <script>
+      (function () {
+        var resolve;
+        window.lodashPromise = new Promise(function (_resolve) {
+          resolve = _resolve;
+        });
+        window.__onLodashLoaded = function () {
+          resolve();
+        };
+      })()(function () {
+        var now = Date.now();
+        window.initialTimestamps = {
+          initialTimestamp: now,
+          initialRequestTimestamp: Math.round(
+            performance.timeOrigin
+              ? performance.timeOrigin
+              : now - performance.now()
+          ),
+        };
+
+        window.thunderboltTag = "libs-releases-GA-local";
+        window.thunderboltVersion = "1.4839.0";
+      })();
+    </script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-sm"
+      style="position: fixed; top: 0; right: 0; left: 0; z-index: +1"
+    >
+      <div
+        class="container-fluid"
+        style="background-color: black; color: white; font-weight: lighter"
+        id="cen"
+      >
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#collapse"
+        >
+          <span class="fab fa-bars text-dark"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0" id="collapse">
+          <div class="navbar-nav" id="gi">
+            <a href="/" class="nav-item nav-link font-weight-light"> HOME </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light"> ABOUT </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light"> ROOMS </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light">
+              SERVICES
+            </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light">
+              GALLERY
+            </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light"> SEE&DO </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="/" class="nav-item nav-link font-weight-light">
+              CONTACT
+            </a>
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <a href="#" class="nav-item nav-link font-weight-light">
+              <button class="btn btn-outline-white">Book a Room</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="container text-center align-items-center" id="yo">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h1 style="font-style: italic; font-weight: bold">Forefly</h1>
+          <h3
+            style="
+              font-style: italic;
+              font-weight: light;
+              text-decoration-line: underline;
+            "
+          >
+            Magnify your Journey
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container"
+      style="position: relative; margin-left: 10px; margin-right: 20px"
+    >
+      <div class="row">
+        <img
+          class="img-fluid"
+          src="https://www.bing.com/images/blob?bcid=S.NB6D-h.jwCCA"
+          alt="Ferofly"
+          id="imge"
+        />
+      </div>
+    </div>
+
+    <div class="container-fluid" id="rin">
+      <div class="row">
+        <div class="col-6 col-md-3">
+          <form action="method">
+            <label for="in">Check-in</label>
+
+            <input type="date" name="day" id="in" />
+
+            <label for="out">Check-out</label>
+
+            <input type="date" name="days" id="out" />
+
+            <label for="no">Adults</label>
+
+            <input type="number" id="no" />
+            <label for="nos">Kids</label>
+
+            <input type="number" id="nos" />
+
+            <input type="button" value="Search" id="fi" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="icons">
+      <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+      <br />
+      <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+      <br />
+      <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+    </div>
+  </body>
+</html>
